@@ -13,3 +13,6 @@
 请放轻松地对这个项目做任何修改。唯一的限制就是你需要对你的所有用户以 GNU Affero Public License 许可证开放源代码。
 
 玩的开心！
+
+## 版权信息
+- [PDFtoPrinter.exe](http://www.columbia.edu/~em36/pdftoprinter.html) 的所有权利属于哥伦比亚大学的 Edward Mendelson

@@ -15,3 +15,6 @@ Please consider adding a HTTP basic authentication ahead of this script, if you 
 Feel free to make any changes to this project. Only one restriction is that your code must be open-source with GNU Affero Public License 3.0 to every user of your version.
 
 Have fun!
+
+## Legal Infomations
+- [PDFtoPrinter.exe](http://www.columbia.edu/~em36/pdftoprinter.html)'s all right reserved by Edward Mendelson in Columbia University.
