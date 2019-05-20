@@ -23,8 +23,11 @@
     <b>(请注意，点击提交后可能会有数秒的响应延迟，请不要刷新以避免重复打印。)</b>
   </form>
   <h3>若要通过 Internet 打印协议来打印，请将打印机地址设置如下:</h3>
-  <pre>http://<?php echo $hostname; ?>/printers/<?php echo $printer_name; ?>/.printer</pre>
-  <i>对于非 Windows 操作系统，请考虑将 http 替换为 https 来使用 IPP over HTTPS 协议。</i>
+  <pre>http://<?php echo $hostname; ?>/printers/<?php echo $printer_name; ?>/.printer</pre> (Windows)
+  <pre>https://<?php echo $hostname; ?>/printers/<?php echo escape($printer_name); ?>/.printer</pre> (macOS)
+  <h3>虚拟 CUPS 打印机设备:</h3>
+  <pre>http://<?php echo $hostname; ?>/printers/<?php echo $vprinter_name; ?>/.printer</pre> (Windows)
+  <pre>https://<?php echo $hostname; ?>/printers/<?php echo escape($vprinter_name); ?>/.printer</pre> (macOS)
   <br>
   <?php echo $additionalInfo; ?>
   <br>
