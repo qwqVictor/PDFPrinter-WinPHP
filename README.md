@@ -1,12 +1,15 @@
 # PDFPrinter-WinPHP
-This is a simple PHP script to execute PDFtoPrinter.exe in order to print an uploaded PDF file.
+
+This is a simple PHP script to execute PDFtoPrinter.exe in order to print an uploaded PDF file. Recently added support for scanning.
 
 [中文版本](README.zh.md)
 
 ## Usage
+
 Edit config.php according to your preferences  in `html` and then have fun!
 
 ## Something to say
+
 This project is just for me. My old printer,  Canon ImageClass MF3222, could only work on Windows platform. But I'm a Mac user. So I decided to make this project. And now it has been running on a Windows Server 2008 R2 virtual machine  on my home CentOS server for a few days.  
 (To someone boring: Don't consider reporting me as a pirate to Microsoft. I have a license for Windows Server 2008 R2.)
 
@@ -17,4 +20,6 @@ Feel free to make any changes to this project. Only one restriction is that your
 Have fun!
 
 ## Legal Infomations
+
 - [PDFtoPrinter.exe](http://www.columbia.edu/~em36/pdftoprinter.html)'s all right reserved by Edward Mendelson in Columbia University.
+- [wia-cmd-scanner.exe](https://github.com/nagimov/wia-cmd-scanner/) is an open-sourced program by nagimov. Using it according to GPL-3.0 License.
