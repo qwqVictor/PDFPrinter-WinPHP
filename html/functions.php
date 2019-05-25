@@ -16,3 +16,28 @@ function escape($str){
     }
     return $reString;
 }
+
+function getMIME($str) {
+    switch (strtolower($str)) {
+        case 'jpg':
+        case 'jpeg':
+            return 'image/jpeg';
+            break;
+        case 'png':
+            return 'image/png';
+            break;
+        case 'gif':
+            return 'image/gif';
+            break;
+        case 'bmp':
+            return 'image/bmp';
+            break;
+        case 'tif':
+        case 'tiff':
+            return 'image/tiff';
+            break;
+        default:
+            return NULL;
+            break;
+    }
+}

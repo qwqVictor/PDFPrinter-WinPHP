@@ -1,7 +1,12 @@
 <?php
-$binFile = "..\\bin\\PDFtoPrinter.exe";
+$printerBinFile = "..\\bin\\PDFtoPrinter.exe";
+$scanBinFile = "..\\bin\\wia-cmd-scanner.exe";
 $tmpDir = "..\\Temp";
-$hostname = "printer.example.com";
-$printer_name = "Canon MF3200 Series";
-$vprinter_name = "Canon MF3200 Series (Virtual CUPS)";
+$hostName = "printer.example.com";
+$printerName = "Canon MF3200 Series";
+$vprinterName = "Canon MF3200 Series (Virtual CUPS)";
+$scannerMaxDPI = 300;
+$defaultScanWidth = 210;
+$defaultScanHeight = 296;
 $additionalInfo = '这里可以附加一些 HTML 文本';
+$additionalInfoScanner = '这里可以附加一些 HTML 文本';
