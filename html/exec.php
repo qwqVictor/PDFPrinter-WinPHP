@@ -50,7 +50,7 @@
 			$width = intval($_POST['width']) < 0 ? 0 : intval($_POST['width']);
 			$height = intval($_POST['height']) < 0 ? 0 : intval($_POST['height']);
 			$fileName = "document-".time().".".$format;
-			$cmd = $scanBinFile." /w $width /h $height /dpi $dpi /color $color /depth $depth /format $format /output ".$tmpDir."\\".$fileName;
+			$cmd = $scannerBinFile." /w $width /h $height /dpi $dpi /color $color /depth $depth /format $format /output ".$tmpDir."\\".$fileName;
 			shell_exec($cmd);
 			if (! file_exists($tmpDir."\\".$fileName)) {
 				echo '<meta name="viewport" content="width=device-width,initial-scale=1.0">';

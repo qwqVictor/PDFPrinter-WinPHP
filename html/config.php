@@ -1,6 +1,6 @@
 <?php
 $printerBinFile = "..\\bin\\PDFtoPrinter.exe";
-$scanBinFile = "..\\bin\\wia-cmd-scanner.exe";
+$scannerBinFile = "..\\bin\\wia-cmd-scanner.exe";
 $tmpDir = "..\\Temp";
 $hostName = "printer.example.com";
 $printerName = "Canon MF3200 Series";
