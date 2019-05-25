@@ -46,10 +46,11 @@
 			$format = isset( $formats[intval($_POST['format'])] ) ? $formats[intval($_POST['format'])] : $formats[0];
 			$color = isset( $colors[intval($_POST['color'])] ) ? $colors[intval($_POST['color'])] : $colors[0];
 			$dpi = intval($_POST['dpi']) >= 0 && intval($_POST['dpi']) <= $scannerMaxDPI ? intval($_POST['dpi']) : $scannerMaxDPI;
+			$depth = 24;
 			$width = intval($_POST['width']) < 0 ? 0 : intval($_POST['width']);
 			$height = intval($_POST['height']) < 0 ? 0 : intval($_POST['height']);
 			$fileName = "document-".time().".".$format;
-			$cmd = $scanBinFile." /w $width /h $height /dpi $dpi /color $color /format $format /output ".$tmpDir."\\".$fileName;
+			$cmd = $scanBinFile." /w $width /h $height /dpi $dpi /color $color /depth $depth /format $format /output ".$tmpDir."\\".$fileName;
 			shell_exec($cmd);
 			if (! file_exists($tmpDir."\\".$fileName)) {
 				echo '<meta name="viewport" content="width=device-width,initial-scale=1.0">';
